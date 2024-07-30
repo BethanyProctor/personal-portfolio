@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
-import { NavBar, Container } from "react-bootstrap";
+import { Container, Nav } from "react-bootstrap";
+import Navbar from 'react-bootstrap/Navbar';
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
 
-    useEffect{() => {
+    useEffect(() => {
         const onScroll = () => {
             if (window.scrollY > 50) {
                 setScrolled(true)
@@ -17,7 +18,12 @@ export const NavBar = () => {
         window.addEventListener("scroll", onScroll)
 
         return () => window.removeEventListener("scroll", onScroll)
-    }, []}
+    }, [])
+
+    const onUpdateActiveLink = (value) => {
+        setActiveLink(value);
+    }
+    
     return (
         <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
           <Container>
@@ -27,9 +33,9 @@ export const NavBar = () => {
             </Navbar.Toggle>
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link href="#home" className={activeLink === "home" ? "active-navbar-link" : 'navbar-link'}>Home</Nav.Link>
-                <Nav.Link href="#about">About Me</Nav.Link>
-                <Nav.Link href="#projects">My Projects</Nav.Link>
+                <Nav.Link href="#home" className={activeLink === "home" ? "active navbar-link" : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
+                <Nav.Link href="#about" className={activeLink === "about" ? "active navbar-link" : 'navbar-link'} onClick={() => onUpdateActiveLink('about')}>About Me</Nav.Link>
+                <Nav.Link href="#projects" className={activeLink === "projects" ? "active navbar-link" : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>My Projects</Nav.Link>
               </Nav>
               <span className="navbar-text">
                 <button className="vvd" onClick={()=>console.log('lets connect')}><span>Contact Me</span></button>
