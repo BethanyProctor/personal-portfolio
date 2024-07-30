@@ -100,7 +100,9 @@ nav.navbar.scrolled {
   background-color: #1C0F13;
 }
 nav.navbar a.navbar-brand {
-    width: 9%;
+   font-weight: 700;
+   color: #fff !important;
+   font-size: 1.75rem;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
