@@ -7,17 +7,17 @@ import ProfilePicture from '../assets/profile-picture.jpg'
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Full Stack Dev", "Web Designer", "Game Developer"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
+    const toRotate = ["Full Stack Developer", "Web Designer", "Game Developer"];
     const period = 2000;
 
     useEffect(() => {
         let ticker = setInterval(() => {
-            ticker();
+            tick();
         }, delta)
 
-        return () => { clearInterval(ticker)}
+        return () => {clearInterval(ticker)}
     }, [text])
 
     const tick = () => {
@@ -31,8 +31,8 @@ export const Banner = () => {
             setDelta(prevDelta => prevDelta /2)
         }
 
-        if (isDeleting && updatedText === fullText) {
-            setIsDeleting(True);
+        if (!isDeleting && updatedText === fullText) {
+            setIsDeleting(true);
             setDelta(period)
         } else if (isDeleting && updatedText === '') {
             setIsDeleting(false);
@@ -47,12 +47,12 @@ export const Banner = () => {
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                     <span className="tagline">Welcome to my Portfolio</span>
-                    <h1>{"Hi, I'm Bethany Proctor."}<span>web developer</span></h1>
-                    <p>A UCF graduate obsessed with learning new languages of all types. Join me on my coding journey as I create new projects and hone my skills.</p>
+                    <h1>{"Hi, I'm Bethany Proctor, "}<span>{text}</span></h1>
+                    <p>As a UCF graduate obsessed with learning new languages of all types, my journey has brought me to studying the MERN stack. Join me as I continue to learn coding, create new projects, and hone my skills.</p>
                     <button onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle /></button>
                     </Col>
                     <Col xs={12} md={6} xl={7}>
-                    <img src={ProfilePicture} alt="Profile Picture"/>
+                    {/* <img src={ProfilePicture} alt="Profile Picture"/> */}
                     </Col>
                 </Row>
             </Container>
