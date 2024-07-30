@@ -1,3 +1,11 @@
+import { Col, Container, Row } from 'react-bootstrap';
+import { ProjectCard } from './ProjectCard';
+import projImg1 from "../assets/whack-a-mole.png"
+import projImg2 from "../assets/devxconnect.png"
+import projImg3 from "../assets/raincheck.png"
+import projImg4 from "../assets/jate.png"
+import projImg5 from "../assets/readme-generator.png"
+import projImg6 from "../assets/blog.png"
 
 export const Projects = () => {
 
@@ -5,32 +13,32 @@ export const Projects = () => {
         {
             title: "Whack-A-Mole",
             description: "JavaScript and Game Dev",
-            imgUrl: ''
+            imgUrl: projImg1
         },
         {
             title: "devXConnect()",
             description: "Full Stack App",
-            imgUrl: 'src\assets\devxconnect.png'
+            imgUrl: projImg2
         },
         {
             title: "RainCheck",
             description: "UI/UX Design",
-            imgUrl: 'src\assets\raincheck.png'
+            imgUrl: projImg3
         },
         {
             title: "J.A.T.E.",
             description: "PWA Development",
-            imgUrl: 'src\assets\jate.png'
+            imgUrl: projImg4
         },
         {
             title: "README.md Generator",
             description: "Markdown and Node.js",
-            imgUrl: 'src\assets\readme-generator.png'
+            imgUrl: projImg5
         },
         {
             title: "Personal Blog",
             description: "HTML, CSS, JavaScript",
-            imgUrl: 'src\assets\blog.png'
+            imgUrl: projImg6
         },
     ]
 
@@ -45,7 +53,8 @@ export const Projects = () => {
                         {
                             projects.map((project, index) => {
                                 return (
-                                    <p>{project.title}</p>
+                                    <ProjectCard key={index} 
+                                    {...project} />
                                 )
                             })
                         }
