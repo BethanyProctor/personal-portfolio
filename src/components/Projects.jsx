@@ -8,37 +8,49 @@ import projImg5 from "../assets/readme-generator.png"
 import projImg6 from "../assets/blog.png"
 
 export const Projects = () => {
+    const imgLink1 = 'https://bethanyproctor.github.io/wack-a-mole/'
+    const imgLink2 = 'https://dev-x-connect1.onrender.com/'
+    const imgLink3 = 'https://bethanyproctor.github.io/raincheck-project/'
+    const imgLink4 = 'https://just-another-text-editor-spg8.onrender.com/'
+    const imgLink5 = ''
+    const imgLink6 = 'https://bethanyproctor.github.io/web-api-blog/'
 
     const projects = [
         {
             title: "Whack-A-Mole",
             description: "JavaScript and Game Dev",
-            imgUrl: projImg1
+            imgUrl: projImg1,
+            imgLink: imgLink1
         },
         {
             title: "devXConnect()",
             description: "Full Stack App",
-            imgUrl: projImg2
+            imgUrl: projImg2,
+            imgLink: imgLink2
         },
         {
             title: "RainCheck",
             description: "UI/UX Design",
-            imgUrl: projImg3
+            imgUrl: projImg3,
+            imgLink: imgLink3
         },
         {
             title: "J.A.T.E.",
             description: "PWA Development",
-            imgUrl: projImg4
+            imgUrl: projImg4,
+            imgLink: imgLink4
         },
         {
             title: "README.md Generator",
             description: "Markdown and Node.js",
-            imgUrl: projImg5
+            imgUrl: projImg5,
+            
         },
         {
             title: "Personal Blog",
             description: "HTML, CSS, JavaScript",
-            imgUrl: projImg6
+            imgUrl: projImg6,
+            imgLink: imgLink6
         },
     ]
 
