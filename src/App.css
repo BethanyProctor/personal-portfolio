@@ -120,16 +120,21 @@ span.navbar-text {
     display: flex;
     align-items: center;
 }
-.navbar-text button {
+.navbar-text button{
   font-weight: 700;
   color: #fff;
   border: 1px solid #fff;
+  border-radius: 5px;
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
 	position: relative;
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
+}
+.navbar-text a {
+  text-decoration: none;
+  color: white !important;
 }
 .navbar-text button span {
   z-index: 1;
@@ -145,8 +150,8 @@ span.navbar-text {
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
-.navbar-text button:hover {
-  color: #121212;
+.navbar-text button:hover a{
+  color: #121212 !important;
 }
 .navbar-text button:hover::before {
 	content: "";
@@ -212,9 +217,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
-  padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(202, 192, 252, 0.5) -5.91%, rgba(26, 25, 129, 0.5) 111.58%);
+  padding: 18px 20px;
+  background-color: #1C0F13;
   border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
@@ -234,7 +240,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   width: 96%;
 }
-.banner button {
+.banner button a {
+  text-decoration: none;
   color: #fff;
   font-weight: 700;
   font-size: 20px;
@@ -252,7 +259,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
-
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
@@ -324,6 +330,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .project-text-box a{
   color: white;
+  text-decoration: none;
 }
 
 .project-text-box a:hover{
@@ -437,12 +444,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding-left: 5px;
 }
 .footer .icon-right {
-  margin-right: 20px
+  margin-right: 20px;
 }
 .footer .icon:hover {
   opacity: 90%;
 }
-
+.footer a {
+  color: #1C0F13;
+}
 .footer .logo {
   width: 60%;
   margin: 50px 0 0 20px;

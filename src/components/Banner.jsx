@@ -28,7 +28,7 @@ export const Banner = () => {
         setText(updatedText);
 
         if (isDeleting) {
-            setDelta(prevDelta => prevDelta /2)
+            setDelta(prevDelta => prevDelta /1.5)
         }
 
         if (!isDeleting && updatedText === fullText) {
@@ -49,7 +49,7 @@ export const Banner = () => {
                     <span className="tagline">Welcome to my Portfolio</span>
                     <h1>{"Hi, I'm Bethany Proctor, "}<span>{text}</span></h1>
                     <p>As a UCF graduate obsessed with learning new languages of all types, my journey has brought me to studying the MERN stack. Join me as I continue to learn coding, create new projects, and hone my skills.</p>
-                    <button onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle /></button>
+                    <button><a href='#connect'>Let's Connect <ArrowRightCircle /></a></button>
                     </Col>
                     <Col xs={12} md={6} xl={7}>
                     {/* <img src={ProfilePicture} alt="Profile Picture"/> */}
