@@ -47,7 +47,7 @@ export const Banner = () => {
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                     <span className="tagline">Welcome to my Portfolio</span>
-                    <h1>{"Hi, I'm Bethany Proctor, "}<span>{text}</span></h1>
+                    <h1 className='banner-intro'>{"Hi, I'm Bethany Proctor,"}</h1><h1 className='banner-animation'><span>a: {text}</span></h1>
                     <p>As a UCF graduate obsessed with learning new languages of all types, my journey has brought me to studying the MERN stack. Join me as I continue to learn coding, create new projects, and hone my skills.</p>
                     <button><a href='#connect'>Let's Connect <ArrowRightCircle /></a></button>
                     </Col>
