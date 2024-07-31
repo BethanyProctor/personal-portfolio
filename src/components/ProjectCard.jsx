@@ -8,8 +8,7 @@ export const ProjectCard = ({ title, description, imgUrl, imgLink, repoLink }) =
                 <div className="project-text-box">
                     <h4><a href={imgLink} target="blank" className="appLink">{title}</a></h4>
                     <span>{description}</span>
-                </div>
-                <div  className="project-text-box">
+                    <br></br>
                     <button className="repo-btn"><a href={repoLink} target="blank" className="repoLink">Visit Repo</a></button>
                 </div>
             </div>

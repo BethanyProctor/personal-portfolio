@@ -71,7 +71,7 @@ export const Projects = () => {
                 <Row>
                     <Col>
                     <h2>Projects</h2>
-                    <p>Here are a few of my projects that I have made in both a MERN stack bootcamp and on my own.</p>
+                    <p>Here are a few of my projects that I have made in both a MERN stack bootcamp and on my own just for fun.</p>
                     <Row>
                         {
                             projects.map((project, index) => {

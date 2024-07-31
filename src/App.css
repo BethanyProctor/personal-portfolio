@@ -397,7 +397,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
 }
 .project-img-box:hover .project-text-box{
-  top: 45%;
+  top: 55%;
   opacity: 1;
 }
 .project-text-box h4 {
@@ -419,11 +419,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .repo-btn{
-  margin-top: 130px;
+  margin-top: 10px;
   padding: 5px 15px;
   background-color: #1c0f13;
   border-radius: 5px;
 }
+
 .project-text-box a:hover{
   color: white;
   opacity: 70%;
