@@ -12,45 +12,56 @@ export const Projects = () => {
     const imgLink2 = 'https://dev-x-connect1.onrender.com/'
     const imgLink3 = 'https://bethanyproctor.github.io/raincheck-project/'
     const imgLink4 = 'https://just-another-text-editor-spg8.onrender.com/'
-    const imgLink5 = ''
     const imgLink6 = 'https://bethanyproctor.github.io/web-api-blog/'
+
+    const repoLink1 = 'https://github.com/BethanyProctor/wack-a-mole'
+    const repoLink2 = 'https://github.com/BethanyProctor/dev-x-connect1'
+    const repoLink3 = 'https://github.com/BethanyProctor/raincheck-project'
+    const repoLink4 = 'https://github.com/BethanyProctor/just-another-text-editor'
+    const repoLink5 = 'https://github.com/BethanyProctor/README-generator'
+    const repoLink6 = 'https://github.com/BethanyProctor/web-api-blog'
 
     const projects = [
         {
             title: "Whack-A-Mole",
             description: "JavaScript and Game Dev",
             imgUrl: projImg1,
-            imgLink: imgLink1
+            imgLink: imgLink1,
+            repoLink: repoLink1
         },
         {
             title: "devXConnect()",
             description: "Full Stack App",
             imgUrl: projImg2,
-            imgLink: imgLink2
+            imgLink: imgLink2,
+            repoLink: repoLink2
         },
         {
             title: "RainCheck",
             description: "UI/UX Design",
             imgUrl: projImg3,
-            imgLink: imgLink3
+            imgLink: imgLink3,
+            repoLink: repoLink3
         },
         {
             title: "J.A.T.E.",
             description: "PWA Development",
             imgUrl: projImg4,
-            imgLink: imgLink4
+            imgLink: imgLink4,
+            repoLink: repoLink4
         },
         {
             title: "README.md Generator",
             description: "Markdown and Node.js",
             imgUrl: projImg5,
-            
+            repoLink: repoLink5
         },
         {
             title: "Personal Blog",
             description: "HTML, CSS, JavaScript",
             imgUrl: projImg6,
-            imgLink: imgLink6
+            imgLink: imgLink6,
+            repoLink: repoLink6
         },
     ]
 

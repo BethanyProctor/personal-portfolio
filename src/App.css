@@ -287,7 +287,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 }
 .project-img-box::before {
   content: "";
@@ -312,7 +312,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
 }
 .project-img-box:hover .project-text-box{
-  top: 50%;
+  top: 45%;
   opacity: 1;
 }
 .project-text-box h4 {
@@ -333,6 +333,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-decoration: none;
 }
 
+.repo-btn{
+  margin-top: 130px;
+  padding: 5px 15px;
+  background-color: #1c0f13;
+  border-radius: 5px;
+}
 .project-text-box a:hover{
   color: white;
   opacity: 70%;
