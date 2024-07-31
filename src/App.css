@@ -208,7 +208,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* Banner Css */
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 220px 0 100px 0;
   background-image: url("src/assets/banner.jpg");
   background-position: top center;
   background-size: cover;
@@ -262,6 +262,34 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
+/* Profile Picture animation */
+.banner-img {
+  background: url(./assets/profile-pic-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 9px rgb(225, 225, 225 / 30%);
+  order: 1;
+  justify-self: center;
+  width: 400px;
+  height: 400px;
+  margin: 0 0 40px 100px;
+  animation: profile-animation 8s ease-in-out infinite 1s;
+}
+
+@keyframes profile-animation {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 20% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+
 /* Skills CSS */
 .skill {
   padding: 0 0 50px 0;

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 import { Col, Container, Row } from "react-bootstrap"
 import { ArrowRightCircle } from "react-bootstrap-icons"
-import ProfilePicture from '../assets/profile-picture.jpg'
+import ProfilePicture from '../assets/profile-pic-2.jpg'
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -51,8 +51,8 @@ export const Banner = () => {
                     <p>As a UCF graduate obsessed with learning new languages of all types, my journey has brought me to studying the MERN stack. Join me as I continue to learn coding, create new projects, and hone my skills.</p>
                     <button><a href='#connect'>Let's Connect <ArrowRightCircle /></a></button>
                     </Col>
-                    <Col xs={12} md={6} xl={7}>
-                    {/* <img src={ProfilePicture} alt="Profile Picture"/> */}
+                    <Col xs={12} md={6} xl={5}>
+                    <img src={ProfilePicture} alt="Profile Picture" className='banner-img'/>
                     </Col>
                 </Row>
             </Container>
