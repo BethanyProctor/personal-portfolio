@@ -18,7 +18,8 @@
   Visit my portfolio <a href="">here</a>. Take a look at my skills, deployed applications and their GitHub Repos, and fill out the form to contact me if you have any questions. 
   </br>
   </br>
-  ![alt text](image.png)
+  ![image](https://github.com/user-attachments/assets/0f7b158d-bb4a-4ee0-8d78-6baee1d5e4c9)
+
   </br>
   Languages : HTML, CSS, JavaScript, React, Node.js
 
