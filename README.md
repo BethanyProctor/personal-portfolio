@@ -15,7 +15,7 @@
   Dependencies of this project include React/Vite, Node.js, express.js, cors, Bootstrap for React, and dotenv. If you are viewing this project locally, make sure to `npm i` before starting.
 
   ## Usage
-  Visit my portfolio <a href="">here</a>. Take a look at my skills, deployed applications and their GitHub Repos, and fill out the form to contact me if you have any questions. 
+  Visit my portfolio <a href="https://main--proctor-portfolio.netlify.app/">here</a>. Take a look at my skills, deployed applications and their GitHub Repos, and fill out the form to contact me if you have any questions. 
   </br>
   </br>
   ![image](https://github.com/user-attachments/assets/0f7b158d-bb4a-4ee0-8d78-6baee1d5e4c9)
